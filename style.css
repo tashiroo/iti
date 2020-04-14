@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @charset "UTF-8";
 
 html {
@@ -104,4 +105,32 @@ body {
 .about-text {
   margin: 30px 0;
   line-height: 2.5;
+=======
+body {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    "header header"
+    "main main";
+}
+
+.header {
+  grid-area: header;
+}
+
+.flexbox {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.main {
+  grid-area: main;
+}
+
+.main > ul {
+  list-style-type: none;
+  overflow: scroll;
+>>>>>>> master
 }
